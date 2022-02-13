@@ -1,0 +1,25 @@
+{
+  "name": "isg",
+  "version": "1.0.0",
+  "description": "Concept static site for an aerospace engineering company",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/styles.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillataylor/isg.git"
+  },
+  "author": "Phill Taylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phillataylor/isg/issues"
+  },
+  "homepage": "https://github.com/phillataylor/isg#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
