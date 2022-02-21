@@ -28,7 +28,7 @@ body {
   /* only works if there is nothhing positioned absolutely to body */
   overflow-x: hidden;
 }
-
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 2.4rem;
@@ -36,6 +36,7 @@ body {
   background: $color-white;
   padding: 2rem 4rem;
   border-radius: 100rem;
+  border: none;
   box-shadow: 0px 3px 6px #00000029;
   text-decoration: none;
   align-self: flex-start;
@@ -51,7 +52,7 @@ body {
 .container {
   max-width: $container-width;
   margin: 0 auto;
-  border: 1px solid green;
+  // border: 1px solid green;
 
   &-sidepadding-sm {
     padding: 0 5rem;
@@ -183,7 +184,7 @@ SECTION: EXPLORE
   background: transparent
     linear-gradient(
       353deg,
-      #6a506d 0%,
+      // #6a506d 0%,
       #fbd59b 4%,
       #ed935f 15%,
       #58425a 65%,
@@ -241,5 +242,63 @@ SECTION: EXPLORE
   &-author {
     font-size: 1.6rem;
     font-weight: 700;
+  }
+}
+
+/*******************************/
+/* SECTION CTA
+/*******************************/
+.section-cta {
+  width: 100%;
+  height: 100%;
+  padding: 9.6rem 0;
+  background: url('../img/cta-image.png') no-repeat right,
+    transparent
+      linear-gradient(
+        353deg,
+        // #6a506d 0%,
+        #fbd59b 4%,
+        #ed935f 15%,
+        #58425a 65%,
+        #352837 100%
+      )
+      0% 0% no-repeat padding-box;
+}
+
+.cta {
+  &-container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    p {
+      font-size: 2.4rem;
+      color: $color-white;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+
+    input {
+      font-size: 2.4rem;
+      border-radius: 10px;
+      padding: 2rem 4rem;
+      width: 60rem;
+      border: none;
+
+      ::placeholder {
+        color: $color-grey-lightest;
+      }
+    }
+  }
+
+  &-image {
+    width: 100%;
   }
 }
