@@ -99,6 +99,7 @@ body {
   font-family: 'Open Sans', 'Poppins', sans-serif;
   line-height: 1;
   font-weight: 400;
+  color: #707070;
   /* only works if there is nothhing positioned absolutely to body */
   overflow-x: hidden; }
 
@@ -226,3 +227,30 @@ SECTION: EXPLORE
     line-height: 1.5;
     color: #fff;
     margin-bottom: 3rem; }
+
+/*******************************/
+/* SECTION TESTIMONIALS
+/*******************************/
+.section-testimonials {
+  width: 100%;
+  padding: 9.6rem 0; }
+  .section-testimonials .heading-secondary {
+    text-align: center; }
+
+.testimonial-gallery {
+  width: 100%;
+  display: flex;
+  gap: 10rem; }
+
+.testimonial-container {
+  display: flex;
+  gap: 5rem; }
+
+.testimonial-text blockquote {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  margin-bottom: 3rem; }
+
+.testimonial-author {
+  font-size: 1.6rem;
+  font-weight: 700; }
